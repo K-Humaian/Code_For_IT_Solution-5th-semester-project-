@@ -1,0 +1,430 @@
+<?php
+// index.php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header('Location: login.php');
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multipage</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 5 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+
+<body class="about">
+    <!-- Navbar Section Start -->
+    <header id="full_nav">
+        <div class="header fixed-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-stream navbar-toggler-icon"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="website.html">Website</a></li>
+                                    <li><a class="dropdown-item" href="branding.html">Branding</a></li>
+                                    <li><a class="dropdown-item" href="advertising.html">Advertisement</a></li>
+                                    <li><a class="dropdown-item" href="social-media.html">Social Media</a></li>
+                                    <li><a class="dropdown-item" href="discussion.html">Discussion</a></li>
+                                    <li><a class="dropdown-item" href="copyright.html">Copyrights</a></li>
+                                    <li><a class="dropdown-item" href="futureplan.html">Future Plan</a></li>
+                                    <li><a class="dropdown-item" href="Machinelearning.html">Machine Learning</a></li>
+                                    <li><a class="dropdown-item" href="datascience.html">Data Science</a></li>
+                                    <li><a class="dropdown-item" href="google.html">Google</a></li>
+                                    <li><a class="dropdown-item" href="microsoft.html">Microsoft</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Navbar Section Exit -->
+
+    <!-- About Section Start-->
+    <section class="parallax parallax-main img1">
+        <div class="main-wrapper wrapper">
+            <div class="container">
+            </div>
+            <div class="container-fluid px-lg-0">
+                <div class="row">
+                    <div class="offset-lg-6 col-lg-6 offset-md-4 col-md-8 mb-5 mb-lg-0">
+                        <div class="text-end parallax parallax-1 img2">
+                            <div class="card black-card">
+                                <h3>About Us</h3>
+                                <h5>Our sole goal is to bring your vision to life, through our vast experience,
+                                    innovation and dedication</h5>
+                                <p>Our team is here to assist you with all of your digital marketing needs, From Web
+                                    Design and Branding, all the way to Advertisement </p>
+                                <a href="#" class="view-link">Contact Us <img src="./images/arrow.svg" class="ms-4"></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--About Section Exit-->
+
+    <!-- Who we are Section Start-->
+    <section class="bg-black wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="sec-title">
+                        <h1 class="text-white">Who We Are</h1>
+                    </div>
+                </div>
+                <div class="col-md-7 mb-5">
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis distinctio quis voluptatum
+                        pariatur magnam tempore atque ducimus adipisci aliquam, nemo facilis impedit fugiat aperiam
+                        reprehenderit a qui ea corrupti? Alias! Lorem, ipsum dolor sit amet consectetur adipisicing
+                        elit. Nobis distinctio quis voluptatum pariatur magnam tempore atque ducimus adipisci aliquam,
+                        nemo facilis impedit fugiat aperiam reprehenderit a qui ea corrupti? Alias!</p>
+                    <br>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis distinctio quis voluptatum
+                        pariatur magnam tempore atque ducimus adipisci aliquam, nemo facilis impedit fugiat aperiam
+                        reprehenderit a qui ea corrupti? Alias</p>
+
+                </div>
+                <div class="col-md-5 mb-5">
+                    <img src="./images/about/about-us.webp" / class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Who we are Section Exit-->
+
+    <!-- Abilities Section Start-->
+    <section class="abilities-wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-5">
+                    <div class="sec-title mb-5">
+                        <h1>Our Capabilities</h1>
+                        <h5 class="text-black fw-normal text-capitalize">Everything you need to turn an idea into a
+                            website</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-6 mb-5">
+                    <div class="card border-0">
+                        <h3>Product</h3>
+                        <ul>
+                            <li>
+                                <p>Strategy</p>
+                            </li>
+                            <li>
+                                <p>Audience Analysis</p>
+                            </li>
+                            <li>
+                                <p>Business Model Canvas</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-6 mb-5">
+                    <div class="card border-0">
+                        <h3>Design</h3>
+                        <ul>
+                            <li>
+                                <p>Brand Identity</p>
+                            </li>
+                            <li>
+                                <p>UI/UX Research</p>
+                            </li>
+                            <li>
+                                <p>Visual Design</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-6 mb-5">
+                    <div class="card border-0">
+                        <h3>Development</h3>
+                        <ul>
+                            <li>
+                                <p>Websites</p>
+                            </li>
+                            <li>
+                                <p>Internet of Things</p>
+                            </li>
+                            <li>
+                                <p>Emerging Tech & Labs</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-6 mb-5">
+                    <div class="card border-0">
+                        <h3>Growth</h3>
+                        <ul>
+                            <li>
+                                <p>Digital Marketing</p>
+                            </li>
+                            <li>
+                                <p>Internet of Things</p>
+                            </li>
+                            <li>
+                                <p>Search Engine Optimization</p>
+                            </li>
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Abilities Section Exit-->
+
+    <!-- Process Section Start-->
+    <section class="process-wrapper wrapper">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="sec-title">
+                        <h1>THE PROCESS</h1>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="d-flex align-items-center justify-content-center process-content">
+                        <span>1</span>
+                        <p>Explore our services and give us a call to consult what services are right for you</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="d-flex align-items-center justify-content-center process-content">
+                        <span>2</span>
+                        <p>Explore our services and give us a call to consult what services are right for you</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-5">
+                    <div class="d-flex align-items-center justify-content-center process-content">
+                        <span>3</span>
+                        <p>Explore our services and give us a call to consult what services are right for you</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!--Process Section Exit-->
+
+    <!-- Team Section Start-->
+    <section class="team-wrapper wrapper">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 mb-5">
+                    <div class="sec-title mb-5">
+                        <h1>OUR TEAM</h1>
+                        <h5 class="text-black fw-normal text-capitalize">A proud team of developers, coders, writers
+                            whose unbeatable coordination has been helping business survive for a decade now. We Inspire
+                            you to Aspire.</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-3 col-6 mb-5">
+                    <div class="card border-0 text-center">
+                        <div class="team-img">
+                            <img src="./images/team/dummy.jpg" class="img-fluid">
+                        </div>
+                        <div class="team-detail">
+                            <h5>John Smith</h5>
+                            <p class="">Frontend Designer</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-6 mb-5">
+                    <div class="card border-0 text-center">
+                        <div class="team-img">
+                            <img src="./images/team/dummy.jpg" class="img-fluid">
+                        </div>
+                        <div class="team-detail">
+                            <h5>David Karlo</h5>
+                            <p class="">Backend developer</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-6 mb-5">
+                    <div class="card border-0 text-center">
+                        <div class="team-img">
+                            <img src="./images/team/dummy.jpg" class="img-fluid">
+                        </div>
+                        <div class="team-detail">
+                            <h5>Md. Humaian kabir</h5>
+                            <p class="">Software Engineer</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-6 mb-5">
+                    <div class="card border-0 text-center">
+                        <div class="team-img">
+                            <img src="./images/team/dummy.jpg" class="img-fluid">
+                        </div>
+                        <div class="team-detail">
+                            <h5>Nazmul Hassan</h5>
+                            <p class="">ML Engineer</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-6 mb-5">
+                    <div class="card border-0 text-center">
+                        <div class="team-img">
+                            <img src="./images/team/dummy.jpg" class="img-fluid">
+                        </div>
+                        <div class="team-detail">
+                            <h5>Ziaul Karim</h5>
+                            <p class="">Data Scientist</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-6 mb-5">
+                    <div class="card border-0 text-center">
+                        <div class="team-img">
+                            <img src="./images/team/dummy.jpg" class="img-fluid">
+                        </div>
+                        <div class="team-detail">
+                            <h5>Tanvir Islam</h5>
+                            <p class="">Business Analyst</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-6 mb-5">
+                    <div class="card border-0 text-center">
+                        <div class="team-img">
+                            <img src="./images/team/dummy.jpg" class="img-fluid">
+                        </div>
+                        <div class="team-detail">
+                            <h5>Mustafizur Rahman</h5>
+                            <p class="">Backend Engineer</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-md-3 col-6 mb-5">
+                    <div class="card border-0 text-center">
+                        <div class="team-img">
+                            <img src="./images/team/dummy.jpg" class="img-fluid">
+                        </div>
+                        <div class="team-detail">
+                            <h5>Mahmudur Rahman</h5>
+                            <p class="">Project Manager</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Team Section Exit-->
+
+    <!-- Footer section Start-->
+    <section class="footer_wrapper wrapper">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 footer-logo">
+                    <img src="./images/logo.png" />
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                    <h5><a href="#">+8801610993887</a></h5>
+                    <h5><a href="#">humaian2@gmail.com</a></h5>
+                    <h5>South Patenga Bijoynagar, 100/c-block Chittagong</h5>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                    <ul class="link-widget p-0">
+                        <li><a href="https://www.facebook.com/hkabir.kabir.562"><img
+                                    src="./images/social-media/f.webp" /></a></li>
+                        <li><a href="https://www.instagram.com/k_humaian/"><img
+                                    src="./images/social-media/i.webp" /></a></li>
+                        <li><a href="https://www.linkedin.com/in/k-humaian-md-humaian-kabir-98896a1b2/"><img
+                                    src="./images/social-media/l.webp" /></a></li>
+                        <li><a href="https://twitter.com/md_humaian"><img src="./images/social-media/t.webp" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pt-5 px-0">
+            <div class="row">
+                <div class="col-12">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.945317562431!2d91.80883057399265!3d22.242153445002987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acdf1796b205cf%3A0x6fbccac973bc8837!2sSouth%20patenga%20Bijoy%20Nagor!5e0!3m2!1sen!2sbd!4v1715087028441!5m2!1sen!2sbd"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright-section   ">
+            <p>© 2024 Code_For_IT_Service. All Rights Reserved</p>
+        </div>
+    </section>
+    <!-- Footer Section Exit  -->
+
+    <!-- whatsapp Intigration -->
+    <div class="whatsapp-icon">
+        <div class="whatsapp"><a href="https://api.whatsapp.com/send/?phone=%2B8801610993887&text&type=phone_number&app_absent=0"
+                target="_blank&quot;">
+                <img src="./images/whatspp.png"></a>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

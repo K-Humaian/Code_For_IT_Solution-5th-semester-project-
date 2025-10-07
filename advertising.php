@@ -1,0 +1,141 @@
+<?php
+// index.php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header('Location: login.php');
+    exit();
+}
+?>
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multipage</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 5 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+
+<body class="services">
+    <!-- Navbar Section Start -->
+    <header id="full_nav">
+        <div class="header fixed-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-stream navbar-toggler-icon"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="website.html">Website</a></li>
+                                    <li><a class="dropdown-item" href="branding.html">Branding</a></li>
+                                    <li><a class="dropdown-item" href="advertising.html">Advertisement</a></li>
+                                    <li><a class="dropdown-item" href="social-media.html">Social Media</a></li>
+                                    <li><a class="dropdown-item" href="discussion.html">Discussion</a></li>
+                                    <li><a class="dropdown-item" href="copyright.html">Copyrights</a></li>
+                                    <li><a class="dropdown-item" href="futureplan.html">Future Plan</a></li>
+                                    <li><a class="dropdown-item" href="Machinelearning.html">Machine Learning</a></li>
+                                    <li><a class="dropdown-item" href="datascience.html">Data Science</a></li>
+                                    <li><a class="dropdown-item" href="google.html">Google</a></li>
+                                    <li><a class="dropdown-item" href="microsoft.html">Microsoft</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Navbar Section Exit -->
+
+    <section class="banner-wrap3">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-6 order-lg-1 order-2">
+                    <div>
+                        <h2>
+                            Let's give you <span><br class="d-none d-xl-block"> Best services ever.</span>
+                        </h2>
+                        <p>
+                            Transform Your Business with Cutting-Edge Technology Solutions from [Multipage]!
+
+                            Are you ready to unlock the true potential of technology and take your business to new
+                            heights? Look no further than [Company Name], your trusted partner for all your IT needs.
+
+                            With [Company Name], you gain access to a team of highly skilled professionals who are
+                            passionate about technology and dedicated to delivering innovative solutions that drive
+                            growth and success. We bring together creativity, technical expertise, and industry
+                            knowledge to create customized solutions tailored to your unique business requirements.
+
+                            Why Choose [Multipage]?
+                        </p>
+                        <p>Experience the Power of Innovation: At [Multipage], innovation is at the core of
+                            everything we do. We embrace the latest technologies, stay ahead of trends, and continuously
+                            explore new possibilities. Our team of experts will work closely with you to understand your
+                            goals, challenges, and vision, and develop groundbreaking solutions that propel your
+                            business forward.</p>
+                        <p>Tailored Solutions for Your Success: We believe that one size does not fit all. Our solutions
+                            are meticulously crafted to fit your specific needs, industry requirements, and budget.
+                            Whether you need a stunning website, a robust mobile application, or a scalable software
+                            solution, we have the expertise to deliver results that exceed your expectations.</p>
+                        <p>Don't wait another moment to embrace the power of technology and elevate your business to new
+                            heights. Contact [Company Name] today to schedule a consultation with our experts and embark
+                            on a journey of digital transformation. Together, let's shape a future where your business
+                            thrives with the help of cutting-edge technology solutions from [Multipage].</p>
+
+                        <p class="mt-5">Let's get started!</p>
+                        <a href="https://youtu.be/XRA1aZiuNko" class="btn main-btn mt-5">See the Demo!!</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5 order-lg-2 order-1">
+                    <div>
+                        <img src="./images/sale1.jpg" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom Js -->
+    <script src="main.js"></script>
+</body>
+
+</html>

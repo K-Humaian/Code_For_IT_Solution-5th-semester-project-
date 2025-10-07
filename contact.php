@@ -1,0 +1,233 @@
+<?php
+// index.php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header('Location: login.php');
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multipage</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 5 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+
+<body class="contact">
+    <!-- Navbar Section Start -->
+    <header id="full_nav">
+        <div class="header fixed-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-stream navbar-toggler-icon"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="website.html">Website</a></li>
+                                    <li><a class="dropdown-item" href="branding.html">Branding</a></li>
+                                    <li><a class="dropdown-item" href="advertising.html">Advertisement</a></li>
+                                    <li><a class="dropdown-item" href="social-media.html">Social Media</a></li>
+                                    <li><a class="dropdown-item" href="discussion.html">Discussion</a></li>
+                                    <li><a class="dropdown-item" href="copyright.html">Copyrights</a></li>
+                                    <li><a class="dropdown-item" href="futureplan.html">Future Plan</a></li>
+                                    <li><a class="dropdown-item" href="Machinelearning.html">Machine Learning</a></li>
+                                    <li><a class="dropdown-item" href="datascience.html">Data Science</a></li>
+                                    <li><a class="dropdown-item" href="google.html">Google</a></li>
+                                    <li><a class="dropdown-item" href="microsoft.html">Microsoft</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- Navbar Section Exit -->
+
+    <!-- contact Section Start-->
+    <section class="parallax parallax-main img1">
+        <div class="main-wrapper wrapper pb-0">
+            <div class="container">
+                <div class="row mb-5 justify-content-center">
+                    <div class="col-lg-9 mb-5">
+                        <div class="sec-title">
+                            <h1>GET IN TOUCH</h1>
+                            <h4>DESIGN YOUR STORY</h4>
+                            <p class="text-black">Need an expert? you are more than welcomed to leave your contact info
+                                and we will be in touch shortly</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="container get-in-touch">
+                <div class="row">
+                    <div class="col-lg-4 col-sm-6 mb-5">
+                        <div class="card">
+                            <i class="fas fa-home"></i>
+                            <h4>Visit Us</h4>
+                            <p>A-212, FIRST FLOOR Chittagong , Bangladesh </p>
+                            <p>Code_For_IT_Service</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-5">
+                        <div class="card">
+                            <i class="fas fa-phone-alt"></i>
+                            <h4>Call Us</h4>
+                            <p>We're here to help and answer any question you might have. We look forward to hearing
+                                from you 😊</p>
+                            <p>+8801610993887</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-sm-6 mb-5">
+                        <div class="card">
+                            <i class="fas fa-envelope-open"></i>
+                            <h4>Contact Us</h4>
+                            <p>For any questions you may have, you can reach me here:</p>
+                            <p>humaian2@gmail.com</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <!--contact Section Exit-->
+
+    <!-- Form Start-->
+    <section class="form-wrapper wrapper ">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-12 mb-5">
+                    <div class="sec-title">
+                        <h1>LETS TALK</h1>
+                        <p class="text-black">Don’t Hesitate to contact with us for any kind of information!!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-8 col-md-10">
+                    <div class="form-section">
+                        <form>
+                            <div class="mb-5">
+                                <input type="text" class="form-control" placeholder="Name *" required>
+                            </div>
+                            <div class="mb-5">
+                                <input type="email" class="form-control" placeholder="Email *" required>
+                            </div>
+                            <div class="mb-5">
+                                <input type="email" class="form-control" placeholder="Subject">
+                            </div>
+                            <div class="mb-5">
+                                <textarea class="form-control" rows="8" placeholder="Message...." required></textarea>
+                            </div>
+                            <div class="mb-5 text-end">
+                                <button class="btn main-btn">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--Form Exit-->
+
+    <!-- Footer section Start-->
+    <section class="footer_wrapper wrapper">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0 footer-logo">
+                    <img src="./images/logo.png" />
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                    <h5><a href="#">+8801610993887</a></h5>
+                    <h5><a href="#">humaian2@gmail.com</a></h5>
+                    <h5>South Patenga Bijoynagar, 100/c-block Chittagong</h5>
+                </div>
+                <div class="col-lg-4 col-sm-6 mb-5 mb-lg-0">
+                    <ul class="link-widget p-0">
+                        <li><a href="https://www.facebook.com/hkabir.kabir.562"><img
+                                    src="./images/social-media/f.webp" /></a></li>
+                        <li><a href="https://www.instagram.com/k_humaian/"><img
+                                    src="./images/social-media/i.webp" /></a></li>
+                        <li><a href="https://www.linkedin.com/in/k-humaian-md-humaian-kabir-98896a1b2/"><img
+                                    src="./images/social-media/l.webp" /></a></li>
+                        <li><a href="https://twitter.com/md_humaian"><img src="./images/social-media/t.webp" /></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid pt-5 px-0">
+            <div class="row">
+                <div class="col-12">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.945317562431!2d91.80883057399265!3d22.242153445002987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acdf1796b205cf%3A0x6fbccac973bc8837!2sSouth%20patenga%20Bijoy%20Nagor!5e0!3m2!1sen!2sbd!4v1715087028441!5m2!1sen!2sbd"
+                        width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid copyright-section   ">
+            <p>© 2024 Code_For_IT_Service. All Rights Reserved</p>
+        </div>
+    </section>
+    <!-- Footer Section Exit  -->
+
+    <!-- whatsapp Intigration -->
+    <div class="whatsapp-icon">
+        <div class="whatsapp"><a href="https://api.whatsapp.com/send/?phone=%2B8801610993887&text&type=phone_number&app_absent=0"
+                target="_blank&quot;">
+                <img src="./images/whatspp.png"></a>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
+<!-- <iframe
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3692.945317562431!2d91.80883057399265!3d22.242153445002987!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30acdf1796b205cf%3A0x6fbccac973bc8837!2sSouth%20patenga%20Bijoy%20Nagor!5e0!3m2!1sen!2sbd!4v1715087028441!5m2!1sen!2sbd"
+    width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe> -->

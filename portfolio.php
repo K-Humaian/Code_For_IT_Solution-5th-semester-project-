@@ -1,0 +1,185 @@
+<?php
+// index.php
+session_start();
+if (!isset($_SESSION['username'])) {
+    header('Location: login.php');
+    exit();
+}
+?>
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multipage</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap 5 CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome 5 CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+
+    <!-- Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive-style.css">
+</head>
+
+<body class="portfolio">
+    <!-- Navbar Section Start -->
+    <header id="full_nav">
+        <div class="header fixed-top">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="./images/logo.png" alt="">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main-nav"
+                        aria-controls="main-nav" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-stream navbar-toggler-icon"></i>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="main-nav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item">
+                                <a class="nav-link" href="index.html">Home</a>
+                            </li>
+
+                            <li class="nav-item">
+                                <a class="nav-link active" href="about.html">About Us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button">
+                                    Services
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="website.html">Website</a></li>
+                                    <li><a class="dropdown-item" href="branding.html">Branding</a></li>
+                                    <li><a class="dropdown-item" href="advertising.html">Advertisement</a></li>
+                                    <li><a class="dropdown-item" href="social-media.html">Social Media</a></li>
+                                    <li><a class="dropdown-item" href="discussion.html">Discussion</a></li>
+                                    <li><a class="dropdown-item" href="copyright.html">Copyrights</a></li>
+                                    <li><a class="dropdown-item" href="futureplan.html">Future Plan</a></li>
+                                    <li><a class="dropdown-item" href="Machinelearning.html">Machine Learning</a></li>
+                                    <li><a class="dropdown-item" href="datascience.html">Data Science</a></li>
+                                    <li><a class="dropdown-item" href="google.html">Google</a></li>
+                                    <li><a class="dropdown-item" href="microsoft.html">Microsoft</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="portfolio.html">Portfolio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <section class="banner-wrap11">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 mb-6 order-lg-1 order-2">
+                    <div>
+                        <h2>
+                            Our <span><br class="d-none d-xl-block"> portfolio.</span>
+                        </h2>
+                        <p>
+
+                            Welcome to our IT company's portfolio, where we showcase our expertise, experience, and
+                            commitment to delivering exceptional solutions to our clients. With a passion for technology
+                            and a team of dedicated professionals, we strive to exceed expectations and drive
+                            transformative outcomes. <br>
+
+                            Services:
+                            At our IT company, we offer a comprehensive range of services that cater to the diverse
+                            needs of businesses in today's digital landscape. From software development to cloud
+                            solutions, here are some of the key services we provide: <br>
+
+                            Custom Software Development: We specialize in developing tailor-made software solutions that
+                            address unique business challenges. Our team leverages the latest technologies and agile
+                            methodologies to deliver robust, scalable, and user-friendly applications. <br>
+
+                            Web and Mobile App Development: We create captivating web and mobile applications that
+                            engage users and enhance their digital experience. Our team excels in developing intuitive,
+                            responsive, and feature-rich apps across various platforms. <br>
+
+                            UI/UX Design: We understand the significance of user-centric design in creating engaging
+                            digital experiences. Our skilled designers combine aesthetics with usability to craft
+                            visually stunning interfaces that deliver seamless interactions. <br>
+
+                            Cloud Solutions: We harness the power of cloud computing to help businesses achieve
+                            scalability, flexibility, and cost-efficiency. From cloud migration to architecture design
+                            and management, we offer end-to-end cloud solutions tailored to our clients' needs. <br>
+
+                            IT Consulting: Our experienced consultants provide valuable insights and guidance to
+                            businesses seeking to leverage technology for growth. We offer strategic planning,
+                            technology audits, and process optimization to align IT initiatives with overall business
+                            objectives. <br>
+
+                            Cybersecurity: We prioritize the protection of our clients' valuable assets and sensitive
+                            data. Our cybersecurity experts employ industry best practices to assess vulnerabilities,
+                            implement robust security measures, and provide ongoing monitoring and support. <br>
+ 
+                            Experience and Expertise:
+                            With years of industry experience, our IT company has successfully served clients across
+                            various sectors, including healthcare, finance, e-commerce, and more. We have a proven track
+                            record of delivering innovative solutions that drive efficiency, productivity, and
+                            profitability. <br>
+ 
+                            Our team of professionals comprises skilled developers, designers, project managers, and
+                            consultants who are passionate about staying at the forefront of technology. We consistently
+                            upgrade our skills and adapt to emerging trends, enabling us to tackle complex challenges
+                            and deliver cutting-edge solutions. <br>
+
+                            Client Success Stories:
+                            Here are a few examples of how our IT solutions have made a tangible impact on our clients'
+                            businesses: <br>
+
+                            Company [Enois]: We developed a custom enterprise resource planning (ERP) software solution that
+                            streamlined their internal processes, resulting in improved efficiency and significant cost
+                            savings. <br>
+
+                            Company [Brainstation23]: Our web and mobile app development expertise helped Company Y expand their
+                            customer reach and boost sales by providing an intuitive and seamless user experience. <br>
+
+                            Company [Optimizely]: By implementing robust cybersecurity measures and conducting regular
+                            vulnerability assessments, we ensured the protection of Company Z's sensitive data,
+                            safeguarding their reputation and customer trust. <br>
+
+                            Commitment to Excellence: <br>
+                            At our IT company, we are committed to delivering excellence in every project we undertake.
+                            We pride ourselves on our customer-centric approach, attention to detail, and unwavering
+                            commitment to quality. We strive to forge long-term partnerships with our clients, serving
+                            as their trusted technology advisor and helping them achieve their business goals. <br>
+
+                            Contact us today to explore how our IT solutions can propel your business forward and drive
+                            sustainable success in the ever-evolving digital landscape. <br>
+                        </p>
+
+                        <p class="mt-5">Let's get started!</p>
+                        <a href="https://youtu.be/XRA1aZiuNko" class="btn main-btn mt-5">See the Demo!!</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 mb-5 order-lg-2 order-1">
+                    <div>
+                        <img src="./Images/banner/top-img 1.png" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Navbar Section Exit -->
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.min.js"></script>
+
+    <!-- Custom Js -->
+    <script src="main.js"></script>
+</body>
+
+</html>
